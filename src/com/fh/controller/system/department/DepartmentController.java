@@ -103,8 +103,6 @@ public class DepartmentController extends BaseController {
 	 */
 	@RequestMapping(value="/list")
 	public ModelAndView list(Page page) throws Exception{
-
-
 		logBefore(logger, Jurisdiction.getUsername()+"列表department");
 		ModelAndView mv = this.getModelAndView();
 		PageData pd = new PageData();
